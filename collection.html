@@ -118,10 +118,11 @@
 
 
           <button type="button" class="tile" data-cat="exteriors">
+               <figure>
             <img src="images/arch-hero.jpg"
-             width="1124" height="750" loading="lazy" 
-             alt="Stone and timber house entrance at dusk, with a lit doorway and a reflecting pool">
-             <span class="tile__caption">Stone entrance</span></button>
+            alt="Stone and timber house entrance at dusk">
+                   <figcaption>Architecture</figcaption>
+                              </figure>
 
 
           <button type="button" class="tile" data-cat="interiors">
@@ -146,7 +147,7 @@
 
 
           <button type="button" class="tile" data-cat="exteriors">
-            <img src="images/hero-image.jpg" 
+            <img src="images/hero-image.webp" 
             width="1200" height="1690" loading="lazy"
              alt="Stone courtyard with a central fountain and an archway to the water">
              <span class="tile__caption">Courtyard</span></button>
@@ -159,18 +160,18 @@
              <span class="tile__caption">Bedroom</span></button>
 
              <button type="button" class="tile" data-cat="interiors">
-              <img src="images/interior-design.jpg"
+              <img src="images/interior-design.webp"
               width="900" height="1100" loading="lazy"
               alt="Beautiful interior hallway, with a stone-like wall, plants and a ceiling that have wood across. 
               In a slanted like pattern">
-              <span class="tile_caption">Interior Hallway</span>
+              <span class="tile__caption">Interior Hallway</span>
              </button>
 
              <button type="button" class="tile" data-cat="interiors">
               <img src="images/dining-room-interior.jpg"
               width="760" height="850" loading="lazy"
               alt="Beautiful oaked dinning room, ready for dinner, breakfast, lunch or even just a convo.">
-              <span class="tile_caption">Dinning Room</span></button>
+              <span class="tile__caption">Dinning Room</span></button>
 
 
           <button type="button" class="tile" data-cat="process">
@@ -186,12 +187,6 @@
              alt="Drawn plan of a living room">
              <span class="tile__caption">Living room plan</span></button>
 
-
-          <button type="button" class="tile" data-cat="exteriors">
-            <img src="images/arch-hero (2).jpg"
-             width="1200" height="800" loading="lazy" 
-             alt="Modern house entrance at dusk with a lit timber door">
-             <span class="tile__caption">Evening</span></button>
 
 
           <button type="button" class="tile" data-cat="process">
@@ -227,28 +222,26 @@
               <button type="button" class="tile" data-cat="plans">
                 <img src="images/blueprint-.jpg"
                 width="900" height="600" loading="lazy"
-                alt=" Architectural floor plans showing the layout and arrangement of a home">
-                <span class="tile_caption">Floor plans</span></button>
+                alt="Architectural floor plans showing the layout and arrangement of a home.">
+                <span class="tile__caption">Floor plans</span></button>
 
 
         
 
-              <button type="button" class=" tile" data-cat="plans">
-                <img src="images/precision-measurement.jpg"
-                width="900" height="600" loading="lazy"
-                alt=" Detailed architectural measurements and dimensions for a residential building">
-                <span class="tile_caption">Precision measurements</span>
-              </button>
+             <button type="button" class="tile" data-cat="plans">
+               <img src="images/precision-measurement.jpg"
+              width="900" height="600" loading="lazy"
+              alt="Detailed architectural measurements and dimensions for a residential building">
+             <span class="tile__caption">Precision Measurements</span></button>
 
 
             
 
-              <button type="button" class="tile" data-cat="plans">
-                <img src="images/blueprint-of-house.jpg"
-                wdith="900" height="600" laoding="lazy"
-                alt="Architectural blueprint illustating the design and structure of a house">
-                <span class="tile_caption"> Blueprint of a house</span>
-              </button>
+            <button type="button" class="tile" data-cat="plans">
+````````````  <img src="images/blueprint-of-house.jpg"
+                  width="900" height="600" loading="lazy"
+                alt="Architectural blueprint illustrating the design and structure of a house">
+                <span class="tile__caption">Blueprint of a House</span></button>
 
 
            <button type="button" class="tile" data-cat="process">
@@ -271,21 +264,24 @@
   </main>
 
   <dialog class="lightbox" aria-label="Image viewer">
-    <button class="lightbox__close" type="button" aria-label="Close image viewer">&times;</button>
+  <button class="lightbox__close" type="button" aria-label="Close image viewer">&times;</button>
 
-    <button class="lightbox__nav lightbox__prev" type="button" aria-label="Previous image">&larr;</button>
-    <figure>
-      <img src="" alt="">
-      <figcaption></figcaption>
-    </figure>
-    <button class="lightbox__nav lightbox__next" type="button" aria-label="Next image">&rarr;</button>
-  </dialog>
+  <button class="lightbox__nav lightbox__prev" type="button" aria-label="Previous image">&larr;</button>
+
+  <figure>
+    <images src="images/arch-hero.jpg"
+     alt="Stone and timber house entrance at dusk">
+    <figcaption>Exterior</figcaption>
+  </figure>
+
+  <button class="lightbox__nav lightbox__next" type="button" aria-label="Next image">&rarr;</button>
+</dialog>
 
   <!-- ===== FOOTER ===== -->
   <footer class="site-footer">
     <div class="footer-panel">
       <div class="footer-brand-block">
-        <img src="images/parisian-door.jpg" 
+        <img src="images/parisian-door.webp" 
         alt="Carved wooden door of a stone Parisian townhouse"
          class="footer-image"
           width="84" height="112" loading="lazy">
@@ -336,7 +332,6 @@
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
-  <script src="reveal.js" defer></script>
   <script src="collection.js" defer></script>
   <script src="reveal.js" defer></script>
   <script src="nav.js" defer></script>
