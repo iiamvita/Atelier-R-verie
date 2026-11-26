@@ -1,0 +1,100 @@
+/* ========================================
+   THE HOUSE THAT BUILDS ITSELF (Architecture, "The build")
+   The panel stays in view while you scroll; the drawing completes with you.
+======================================== */
+
+.house-scroll {
+    position: relative;
+    height: 260vh;
+    margin-top: 4rem;
+}
+
+.house-sticky {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1.45fr .55fr;
+    gap: 3rem;
+    align-items: center;
+    padding-top: 5rem;
+}
+
+.house__panel {
+    padding: 2rem;
+    border: 1px solid rgba(58, 46, 40, .12);
+    border-radius: 24px;
+    background: rgba(255, 255, 255, .45);
+}
+
+.house__panel svg {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 68vh;
+}
+
+.house__panel path {
+    fill: none;
+    stroke: #3A2E28;
+    stroke-width: 3;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+/* Colour fills, painted under the line work */
+.house__panel path.fill {
+    stroke: none;
+}
+
+.house__steps {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.house__steps li {
+    padding: 1.1rem 0;
+    border-top: 1px solid rgba(58, 46, 40, .4);
+    font-family: var(--font-display);
+    font-size: 2.2rem;
+    line-height: 1.1;
+    transition: opacity .4s ease;
+}
+
+.house-scroll.is-armed .house__steps li {
+    opacity: .35;
+}
+
+.house-scroll.is-armed .house__steps li.is-done {
+    opacity: .7;
+}
+
+.house-scroll.is-armed .house__steps li[aria-current="step"] {
+    opacity: 1;
+}
+
+@media (max-width: 991.98px) {
+    .house-scroll { height: 230vh; }
+
+    .house-sticky {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        align-content: center;
+    }
+
+    .house__panel { padding: 1rem; }
+    .house__panel svg { max-height: 46vh; }
+
+    .house__steps {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1rem;
+    }
+
+    .house__steps li { font-size: 1.1rem; padding: .75rem 0; }
+}
+
+@supports (height: 100svh) {
+    .house-sticky { height: 100svh; }
+}

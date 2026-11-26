@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Interiors | Atelier Rêverie</title>
+
+  <meta name="description" content="Warm, lived-in interiors: living rooms, kitchens and bedrooms designed to feel like home.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="base.css">
+
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="stylesheet" href="shared.css">
+
+  <link rel="stylesheet" href="interior.css">
+
+  <link rel="stylesheet" href="animations.css">
+
+  <link rel="stylesheet" href="motion.css">
+
+</head>
+
+<body>
+
+  <!-- ===== HEADER / NAVIGATION ===== -->
+  <header class="site-header">
+    <nav class="navbar navbar-expand-lg" aria-label="Main navigation">
+      <div class="container-xl">
+        <a class="navbar-brand" href="index.html">Atelier Rêverie</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+        
+        data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="mainNav">
+          <ul class="navbar-nav">
+
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+
+            <li class="nav-item"><a class="nav-link" href="studio.html">The Atelier</a></li>
+
+            <li class="nav-item"><a class="nav-link" href="architecture.html">Architecture</a></li>
+
+            <li class="nav-item"><a class="nav-link" href="interior.html" aria-current="page">Interior</a></li>
+
+            <li class="nav-item"><a class="nav-link" href="collection.html">Collection</a></li>
+
+            <li class="nav-item"><a class="nav-link" href="contact.html">Visit Us</a></li>
+
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- ===== HERO ===== -->
+    <section class="int-hero int-hero--light" aria-labelledby="page-title">
+
+      <img fetchpriority="high" src="images/interior-hero.jpg"
+
+      width="1920" height="1180"
+      
+      alt="Bright empty room with cream walls, tall sheer curtains and a glossy floor in afternoon light">
+
+      <div class="int-hero__content">
+
+        <span class="section-label">Interiors</span>
+
+        <h1 id="page-title">Rooms made to be lived in.</h1>
+
+        <a href="#living" class="btn-maison">Step inside</a>
+
+      </div>
+    </section>
+
+    <!-- ===== LIVING ROOM ===== -->
+    <section class="room room--living section"
+
+     id="living" aria-labelledby="living-title">
+
+      <div class="container-xl">
+
+        <div class="room__grid">
+
+          <figure class="plate curtain room__tall" data-reveal>
+
+            <img src="images/living-room-interior.jpg"
+            width="1200" height="1602" loading="lazy"
+
+             alt="Living room with a pale grey sofa, round wooden tables, a floor lamp and large plants">
+
+            <figcaption><span>Living room</span></figcaption>
+
+          </figure>
+
+          <div class="room__side">
+
+            <div class="room__text" data-reveal>
+
+              <span class="section-label">The living room</span>
+
+              <h2 id="living-title">Where the day slows down.</h2>
+
+              <p>Soft textures, warm wood and a lamp left on, chosen to be lived in, not just looked at.</p>
+
+            </div>
+
+            <figure class="plate curtain" data-reveal>
+
+              <img src="images/living-room-interior.jpg"
+
+              width="1400" height="933" loading="lazy" 
+
+              alt="Carved wooden side tables, a knitted pouf and a woven rug in front of a grey sofa">
+
+              <figcaption><span>Warm wood</span></figcaption>
+
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== KITCHEN ===== -->
+    <section class="room room--kitchen section" aria-labelledby="kitchen-title">
+
+      <div class="container-xl">
+
+        <div class="room__grid room__grid--flip">
+
+          <div class="room__side">
+
+            <div class="room__text" data-reveal>
+
+              <span class="section-label">The kitchen</span>
+
+              <h2 id="kitchen-title">The heart of the home.</h2>
+
+              <p>Space to cook, talk and linger, with light that changes as the day does.</p>
+
+            </div>
+
+            <figure class="plate dial" data-dial data-reveal>
+
+              <div class="dial__stage">
+
+                <img src="images/kitchen.jpg" 
+
+                width="1800" height="1200" loading="lazy" 
+                
+                alt="White kitchen with a marble island, navy hexagon tiles and two pendant lights">
+
+              </div>
+
+              <div class="dial__control">
+
+                <span aria-hidden="true">Morning</span>
+
+                <input type="range" min="0" max="100" value="0" 
+                
+                aria-label="Time of day, from morning to evening">
+
+                <span aria-hidden="true">Evening</span>
+
+              </div>
+
+              <figcaption><span>Slide from morning to evening</span></figcaption>
+            </figure>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== DINING ===== -->
+    <section class="room room--dining section" aria-labelledby="dining-title">
+
+      <div class="container-xl">
+
+        <div class="dining__grid">
+
+          <div class="room__text dining__text" data-reveal>
+
+            <span class="section-label">The dining room</span>
+
+            <h2 id="dining-title">Gathered around one table.</h2>
+
+            <p>Dark timber, soft velvet and a light that makes every evening feel like an occasion.</p>
+
+          </div>
+
+          <figure class="plate curtain dining__img" data-reveal>
+
+            <img src="images/dining-room-interior.jpg"
+
+            
+             width="1600" height="1465" loading="lazy"
+             
+             alt="Dining table with blush velvet chairs, a dark wood panelled wall and a globe chandelier">
+
+            <figcaption><span>Dining</span></figcaption>
+
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== BEDROOM ===== -->
+    <section class="room room--bedroom section" aria-labelledby="bedroom-title">
+
+      <div class="container-xl">
+
+        <div class="bedroom__grid">
+
+          <div class="room__text bedroom__text" data-reveal>
+
+            <span class="section-label">The bedroom</span>
+
+            <h2 id="bedroom-title">Quiet by design.</h2>
+
+            <p>Linen, low light and nothing that asks for attention.</p>
+
+          </div>
+
+          <figure class="plate curtain bedroom__a" data-reveal>
+
+            <img src="images/bedroom-interior.jpg" 
+
+            width="1100" height="1650" loading="lazy"
+
+             alt="Bed with white linen pillows, a clip-on reading lamp, framed prints and a vase of dried flowers">
+
+            <figcaption><span>Linen</span></figcaption>
+          </figure>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== LIGHT ===== -->
+    <section class="room room--hall section" aria-labelledby="hall-title">
+
+      <div class="container-xl">
+
+        <div class="room__grid">
+
+          <figure class="plate curtain room__tall" data-reveal>
+
+            <img src="images/interior-light.jpg "
+
+            width="1100" height="1647" loading="lazy" 
+            
+            alt="Hallway with a skylight, pale herringbone oak floor, built-in shelves and a glass door">
+
+            <figcaption><span>The hallway</span></figcaption>
+
+          </figure>
+
+          <div class="room__side">
+
+            <div class="room__text" data-reveal>
+
+              <span class="section-label">The light</span>
+
+              <h2 id="hall-title">Light that moves through the house.</h2>
+
+              <p>A skylight, pale oak and glass, so the day follows you from room to room.</p>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CALL TO ACTION ===== -->
+    <section class="int-cta section" aria-labelledby="cta-title">
+
+      <div class="container-xl" data-reveal>
+
+        <h2 id="cta-title">Ready to feel at home?</h2>
+
+        <a href="contact.html" class="btn-maison">Start the conversation</a>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+
+    <div class="footer-panel">
+
+      <div class="footer-brand-block">
+
+        <img src="images/parisian-door.jpg" 
+
+        alt="Carved wooden door of a stone Parisian townhouse" 
+
+        class="footer-image" width="84" height="112" loading="lazy">
+
+        <div>
+          <p class="footer__brand">Atelier Rêverie</p>
+          <p class="footer__tagline">Architecture. Interiors. Thoughtful Design.</p>
+          <p class="footer__description">Creating homes and spaces designed to be lived in beautifully.</p>
+        </div>
+
+      </div>
+
+      <nav aria-label="Footer navigation">
+        <h2 class="footer-heading">Explore</h2>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="studio.html">The Atelier</a></li>
+          <li><a href="architecture.html">Architecture</a></li>
+          <li><a href="interior.html">Interior</a></li>
+          <li><a href="collection.html">Collection</a></li>
+        </ul>
+      </nav>
+     
+      <div>
+      <h2 class="footer-heading">Connect</h2>
+      <ul class="footer-links footer-links--stack">
+        <li><a href="mailto:architecturedesign@atelierreverie.com">architecturedesign@atelierreverie.com</a></li>
+        <li>Paris, France.</li>
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">Facebook</a></li>
+      </ul>
+    </div>
+
+      <p class="footer-bottom">&copy; 2026 Atelier Rêverie. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
+  <script src="reveal.js" defer></script>
+  <script src="dial.js" defer></script>
+</body>
+</html>

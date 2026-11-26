@@ -1,0 +1,287 @@
+/* ========================================
+   CONTACT PAGE
+   Backgrounds chain through --blend-0 to --blend-4
+======================================== */
+
+/* ========================================
+   HERO   (cream to linen)
+======================================== */
+
+.contact-hero {
+    padding: 11rem 0 6rem;
+    background: linear-gradient(180deg, var(--blend-0) 0%, var(--blend-1) 100%);
+}
+
+.contact-hero h1 {
+    max-width: 14ch;
+    font-size: clamp(3.5rem, 7vw, 6rem);
+    line-height: .95;
+}
+
+.contact-hero p {
+    max-width: 620px;
+}
+
+/* ========================================
+   FORM AND DETAILS   (linen to sand)
+======================================== */
+
+.contact-main {
+    background: linear-gradient(180deg, var(--blend-1) 0%, var(--blend-2) 100%);
+}
+
+.contact__grid {
+    display: grid;
+    grid-template-columns: 1.15fr .85fr;
+    gap: 5rem;
+    align-items: start;
+}
+
+.contact-form {
+    padding: 3rem;
+    border: 1px solid rgba(58, 46, 40, .12);
+    border-radius: 24px;
+    background: rgba(255, 255, 255, .5);
+}
+
+.contact-form h2 {
+    margin-bottom: 2rem;
+    font-size: clamp(2.2rem, 3.5vw, 3rem);
+}
+
+.field-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 2rem;
+}
+
+.field {
+    margin-bottom: 1rem;
+}
+
+.field label {
+    display: block;
+    margin-bottom: .25rem;
+    font-size: .8rem;
+    letter-spacing: .16em;
+    text-transform: uppercase;
+    color: var(--label);
+}
+
+.field input,
+.field select,
+.field textarea {
+    width: 100%;
+    padding: .7rem 0;
+    border: 0;
+    border-bottom: 1px solid rgba(58, 46, 40, .55);
+    border-radius: 0;
+    background: transparent;
+    font: inherit;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    color: var(--deep-espresso);
+}
+
+.field textarea {
+    resize: vertical;
+}
+
+.field input:focus-visible,
+.field select:focus-visible,
+.field textarea:focus-visible {
+    outline: 2px solid var(--antique-wood);
+    outline-offset: 4px;
+}
+
+.field.is-invalid input,
+.field.is-invalid textarea {
+    border-bottom-color: #8A2F2F;
+}
+
+/* Reserved height so messages don't push the layout around */
+.field__error {
+    min-height: 1.5rem;
+    margin: .35rem 0 0;
+    font-size: .9rem;
+    line-height: 1.4;
+    color: #8A2F2F;
+}
+
+.contact-form .btn-maison {
+    margin-top: .75rem;
+    cursor: pointer;
+}
+
+.contact-form .btn-maison:disabled {
+    opacity: .6;
+    cursor: wait;
+    transform: none;
+}
+
+.form-status {
+    display: none;
+    margin-top: 1.5rem;
+    padding: 1rem 1.25rem;
+    border-radius: 14px;
+    font-size: 1.05rem;
+    line-height: 1.6;
+}
+
+.form-status.is-success {
+    display: block;
+    background: rgba(165, 170, 138, .4);
+}
+
+.form-status.is-error {
+    display: block;
+    background: rgba(201, 145, 145, .35);
+}
+
+.contact__info {
+    position: sticky;
+    top: 8rem;
+}
+
+.contact__info h2 {
+    font-size: clamp(2.2rem, 3.5vw, 3rem);
+}
+
+.info {
+    margin: 2rem 0 0;
+    border-top: 1px solid rgba(58, 46, 40, .4);
+}
+
+.info > div {
+    padding: 1rem 0;
+    border-bottom: 1px solid rgba(58, 46, 40, .2);
+}
+
+.info dt {
+    margin-bottom: .25rem;
+    font-size: .8rem;
+    letter-spacing: .16em;
+    text-transform: uppercase;
+    color: var(--label);
+}
+
+.info dd {
+    margin: 0;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    overflow-wrap: anywhere;
+}
+
+.info address {
+    margin: 0;
+    font-style: normal;
+}
+
+.info a {
+    color: var(--deep-espresso);
+    text-decoration: underline;
+    text-decoration-color: var(--antique-wood);
+    text-underline-offset: 4px;
+}
+
+.info a:hover {
+    color: var(--antique-wood);
+}
+
+/* ========================================
+   WHAT HAPPENS NEXT   (sand to biscotti)
+======================================== */
+
+.next {
+    background: linear-gradient(180deg, var(--blend-2) 0%, var(--blend-3) 100%);
+}
+
+.next__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    margin: 3.5rem 0 0;
+    padding: 0;
+    list-style: none;
+}
+
+.next__list li {
+    position: relative;
+    padding-top: 1.75rem;
+    border-top: 1px solid rgba(58, 46, 40, .45);
+}
+
+.next__list li::before {
+    content: "";
+    position: absolute;
+    top: -6px;
+    left: 0;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background: var(--antique-wood);
+}
+
+.next__list h3 {
+    margin-bottom: .5rem;
+    font-size: 2.2rem;
+}
+
+.next__list p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+/* ========================================
+   CLOSING   (biscotti to oat latte, meets the footer)
+======================================== */
+
+.contact-close {
+    padding: 7rem 0;
+    background: linear-gradient(180deg, var(--blend-3) 0%, var(--blend-4) 100%);
+    text-align: center;
+}
+
+.contact-close h2 {
+    max-width: 16ch;
+    margin: 0 auto 1rem;
+}
+
+.contact-close p {
+    max-width: 520px;
+    margin: 0 auto 2rem;
+}
+
+/* ========================================
+   TABLETS AND MOBILE
+======================================== */
+
+@media (max-width: 991.98px) {
+    .contact-hero {
+        padding: 9rem 0 4rem;
+    }
+
+    .contact__grid {
+        grid-template-columns: 1fr;
+        gap: 3.5rem;
+    }
+
+    .contact__info {
+        position: static;
+    }
+
+    .next__list {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .contact-form {
+        padding: 2rem 1.5rem;
+    }
+
+    .field-row {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+  <meta charset="utf-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Visit Us | Atelier Rêverie</title>
+
+  <meta name="description" content="Tell us about your home. Contact Atelier Rêverie to plan a new build, a renovation or a new look for a room.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="base.css">
+
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="stylesheet" href="shared.css">
+
+  <link rel="stylesheet" href="contact.css">
+
+  <link rel="stylesheet" href="animations.css">
+
+  
+</head>
+<body>
+
+  <!-- ===== HEADER / NAVIGATION ===== -->
+  <header class="site-header">
+    <nav class="navbar navbar-expand-lg" aria-label="Main navigation">
+      <div class="container-xl">
+        <a class="navbar-brand" href="index.html">Atelier Rêverie</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="mainNav">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="studio.html">The Atelier</a></li>
+            <li class="nav-item"><a class="nav-link" href="architecture.html">Architecture</a></li>
+            <li class="nav-item"><a class="nav-link" href="interior.html">Interior</a></li>
+            <li class="nav-item"><a class="nav-link" href="collection.html">Collection</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html" aria-current="page">Visit Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- ===== HERO ===== -->
+    <section class="contact-hero" aria-labelledby="page-title">
+      <div class="container-xl">
+        <span class="section-label">Visit us</span>
+        <h1 id="page-title">Let’s talk about your home.</h1>
+        <p>Whether you are planning a new build, a renovation or simply a fresh look for a room, tell us a little about it. We read every message ourselves and reply within two working days.</p>
+      </div>
+    </section>
+
+    <!-- ===== FORM AND STUDIO DETAILS ===== -->
+    <section class="contact-main section" aria-labelledby="form-title">
+      <div class="container-xl">
+        <div class="contact__grid">
+
+         <form id="contactForm" class="contact-form" name="contact"
+        action="https://formspree.io/f/xnpdwwdr"
+         method="POST"
+         data-endpoint="https://formspree.io/f/xnpdwwdr"
+           novalidate>
+
+            <div class="field-row">
+              <div class="field">
+                <label for="name">Full name</label>
+                <input id="name" name="name" type="text" autocomplete="name" required aria-describedby="name-error" data-validate>
+                <p class="field__error" id="name-error" aria-live="polite"></p>
+              </div>
+
+              <div class="field">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" autocomplete="email" required aria-describedby="email-error" data-validate>
+                <p class="field__error" id="email-error" aria-live="polite"></p>
+              </div>
+            </div>
+
+            <div class="field-row">
+              <div class="field">
+                <label for="phone">Phone</label>
+                <input id="phone" name="phone" type="tel" autocomplete="tel" required aria-describedby="phone-error" data-validate>
+                <p class="field__error" id="phone-error" aria-live="polite"></p>
+              </div>
+
+              <div class="field">
+                <label for="address">Address</label>
+                <input id="address" name="address" type="text" autocomplete="street-address" required aria-describedby="address-error" data-validate>
+                <p class="field__error" id="address-error" aria-live="polite"></p>
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="project">Type of project</label>
+              <select id="project" name="project">
+                <option>New build</option>
+                <option>Renovation</option>
+                <option>Interiors</option>
+                <option>Not sure yet</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="message">Your message</label>
+              <textarea id="message" name="message" rows="5" required aria-describedby="message-error" data-validate></textarea>
+              <p class="field__error" id="message-error" aria-live="polite"></p>
+            </div>
+
+
+            <button type="submit" class="btn-maison">Send message</button>
+            <div class="form-status" role="status" tabindex="-1"></div>
+          </form>
+
+          <aside class="contact__info" aria-labelledby="studio-title" data-reveal>
+            <h2 id="studio-title">Visit the studio</h2>
+            <p>Our door is open for a coffee and a look at the model room. Please let us know when you are coming.</p>
+            <dl class="info">
+              <div><dt>Studio</dt><dd><address>27 rue de Turenne<br>75003 Paris, France</address></dd></div>
+              <div><dt>Phone</dt><dd><a href="tel:+33142000000">+33 1 42 00 00 00</a></dd></div>
+              <div><dt>Email</dt><dd><a href="mailto:architecturedesign@atelierreverie.com">architecturedesign@atelierreverie.com</a></dd></div>
+              <div><dt>Hours</dt><dd>Monday to Friday<br>9:00 to 18:00</dd></div>
+            </dl>
+          </aside>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== WHAT HAPPENS NEXT ===== -->
+    <section class="next section" aria-labelledby="next-title">
+      <div class="container-xl">
+        <span class="section-label">What happens next</span>
+        <h2 id="next-title">Three simple steps.</h2>
+        <ol class="next__list">
+          <li data-reveal>
+            <h3>We listen.</h3>
+            <p>We read your message and call you to hear about your family, your plans and how you want your home to feel.</p>
+          </li>
+          <li data-reveal>
+            <h3>We visit.</h3>
+            <p>We come to see your site or your rooms, take measurements and talk through what is possible.</p>
+          </li>
+          <li data-reveal>
+            <h3>We propose.</h3>
+            <p>You receive a clear plan with sketches, a timeline and a budget, with no pressure to decide.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===== CLOSING ===== -->
+    <section class="contact-close section" aria-labelledby="close-title">
+      <div class="container-xl" data-reveal>
+        <h2 id="close-title">Not ready to write yet?</h2>
+        <p>Take your time. Browse how a home takes shape, from the first sketch to the day you move in.</p>
+        <a href="architecture.html" class="btn-maison">See the journey</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="footer-panel">
+      <div class="footer-brand-block">
+        <img src="images/parisian-door.jpg" 
+        
+        alt="Carved wooden door of a stone Parisian townhouse" 
+        
+        class="footer-image" width="84" height="112" loading="lazy">
+        <div>
+          <p class="footer__brand">Atelier Rêverie</p>
+          <p class="footer__tagline">Architecture. Interiors. Thoughtful Design.</p>
+          <p class="footer__description">Creating homes and spaces designed to be lived in beautifully.</p>
+        </div>
+      </div>
+      <nav aria-label="Footer navigation">
+        <h2 class="footer-heading">Explore</h2>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="studio.html">The Atelier</a></li>
+          <li><a href="architecture.html">Architecture</a></li>
+          <li><a href="interior.html">Interior</a></li>
+          <li><a href="collection.html">Collection</a></li>
+        </ul>
+      </nav>
+     <div>
+        <h2 class="footer-heading">Connect</h2>
+        <ul class="footer-links footer-links--stack">
+          <li><a href="mailto:architecturedesign@atelierreverie.com">architecturedesign@atelierreverie.com</a></li>
+          <li>Architecture · Interiors · Design</li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Facebook</a></li>
+        </ul>
+      </div>
+      <p class="footer-bottom">&copy; 2026 Atelier Rêverie. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
+  <script src="reveal.js" defer></script>
+  <script src="validate.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+/* ========================================
+   MOTION: scroll-linked touches for Architecture, The Atelier and Interiors
+   Pure CSS. Browsers without scroll-driven animation (Firefox) show the
+   pages exactly as normal, and reduced-motion visitors see none of it.
+   Load last.
+======================================== */
+
+@media (prefers-reduced-motion: no-preference) {
+
+    @supports (animation-timeline: scroll()) {
+
+        /* Reading progress line across the top */
+        @keyframes progress {
+            from { transform: scaleX(0); }
+            to   { transform: scaleX(1); }
+        }
+
+        body::after {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            z-index: 1100;
+            background: var(--antique-wood);
+            transform-origin: 0 50%;
+            transform: scaleX(0);
+            animation: progress linear both;
+            animation-timeline: scroll(root);
+            pointer-events: none;
+        }
+
+        /* Hero photos drift slower than the page (keeps the opening zoom) */
+        @keyframes drift {
+            to { translate: 0 14vh; }
+        }
+
+        .arch-hero > img,
+        .int-hero > img {
+            animation-name: settle, drift;
+            animation-duration: 2.8s, auto;
+            animation-timing-function: ease-out, linear;
+            animation-fill-mode: both, both;
+            animation-timeline: auto, scroll(root);
+            animation-range: normal, 0 100vh;
+        }
+
+        @keyframes drift-soft {
+            to { translate: 0 5vh; }
+        }
+
+        .page-hero__media img {
+            animation: drift-soft linear both;
+            animation-timeline: scroll(root);
+            animation-range: 0 100vh;
+        }
+    }
+
+    @supports (animation-timeline: view()) {
+
+        @keyframes rise-in {
+            from { opacity: 0; transform: translateY(2rem); }
+            to   { opacity: 1; transform: none; }
+        }
+
+        /* Section headings rise as they arrive */
+        .section h2 {
+            animation: rise-in linear both;
+            animation-timeline: view();
+            animation-range: entry 0% entry 40%;
+        }
+
+        /* Studio: the timeline line draws down the page */
+        @keyframes grow {
+            from { transform: scaleY(0); }
+            to   { transform: scaleY(1); }
+        }
+
+        .timeline::before {
+            transform-origin: top;
+            animation: grow linear both;
+            animation-timeline: view();
+            animation-range: entry 20% cover 65%;
+        }
+
+        .timeline li {
+            animation: rise-in linear both;
+            animation-timeline: view();
+            animation-range: entry 0% entry 50%;
+        }
+
+        /* Interiors: the second bedroom image drifts against the first */
+        @keyframes lift {
+            from { translate: 0 3rem; }
+            to   { translate: 0 -3rem; }
+        }
+
+        .bedroom__b {
+            animation: lift linear both;
+            animation-timeline: view();
+            animation-range: cover;
+        }
+    }
+}

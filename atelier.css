@@ -1,0 +1,584 @@
+/* ========================================
+   THE ATELIER PAGE
+======================================== */
+
+:root {
+    --blend-2b: #E1CEB5;
+}
+
+/* ========================================
+   IMAGES
+======================================== */
+
+.arch-img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 2 / 3;
+    object-fit: cover;
+
+    border-radius: 999px 999px 0 0;
+
+    box-shadow:
+        0 25px 60px rgba(0,0,0,.08);
+}
+
+/* ========================================
+   PAGE HERO
+======================================== */
+
+.page-hero {
+
+    padding: 11rem 0 7rem;
+
+    background:
+    linear-gradient(
+        180deg,
+        var(--blend-0) 0%,
+        var(--blend-1) 100%
+    );
+}
+
+.page-hero__grid {
+
+    display: grid;
+
+    grid-template-columns: 1.3fr .7fr;
+
+    gap: 5rem;
+
+    align-items: center;
+}
+
+.page-hero h1 {
+
+    max-width: 10ch;
+
+    font-size: clamp(5rem, 10vw, 8rem);
+
+    line-height: .92;
+}
+
+.page-hero p {
+
+    max-width: 650px;
+
+    font-size: 1.35rem;
+
+    line-height: 2;
+}
+
+.page-hero__media {
+
+    max-width: 400px;
+
+    margin-left: auto;
+}
+
+/* ====
+   PHILOSOPHY
+====*/
+
+.philosophy {
+
+    background:
+    linear-gradient(
+        180deg,
+        var(--blend-1) 0%,
+        var(--blend-2) 100%
+    );
+}
+
+.philosophy__grid {
+
+    display: grid;
+
+    grid-template-columns: .9fr 1.1fr;
+
+    gap: 7rem;
+
+    align-items: center;
+}
+.philosophy > .container-xl{
+
+    max-width: 1350px;
+
+}
+
+.text-link{
+
+    display:inline-block;
+
+    margin-top:2rem;
+
+    font-size:1.25rem;
+
+    text-decoration:none;
+
+    color:var(--deep-espresso);
+
+    border-bottom:1px solid var(--antique-wood);
+
+    padding-bottom:4px;
+
+    transition:.3s ease;
+}
+
+.philosophy .text-link,
+.work-section .text-link{
+
+    display:block;
+
+    width:fit-content;
+
+    margin:2.5rem auto 0;
+
+}
+
+
+
+.text-link:hover{
+
+    background:var(--antique-wood);
+
+    color:white;
+
+}
+
+.philosophy figure {
+
+    max-width: 420px;
+    margin-left: auto;
+}
+
+.philosophy h2 {
+
+    font-size: clamp(3rem, 5vw, 5rem);
+
+    line-height: 1.05;
+}
+
+.philosophy p {
+
+    max-width: 650px;
+
+    margin-bottom: 1.5rem;
+
+    font-size: 1.35rem;
+
+    line-height: 2;
+}
+
+
+
+/* ========================================
+   HOW WE WORK
+======================================== */
+
+.work-section {
+
+    background:
+    linear-gradient(
+        180deg,
+        var(--blend-2) 0%,
+        var(--blend-2b) 100%
+    );
+}
+
+.work-section h2 {
+
+    font-size: clamp(3rem, 5vw, 5rem);
+
+    line-height: 1.05;
+}
+
+.work-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(12, 1fr);
+
+    column-gap: 2rem;
+
+    row-gap: 3rem;
+
+    margin-top: 4rem;
+}
+
+.work-fig img {
+
+    display: block;
+
+    width: 100%;
+
+    height: auto;
+
+    object-fit: cover;
+
+    filter: sepia(.15) saturate(.9);
+}
+
+.work-fig figcaption {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    margin-top: .75rem;
+
+    padding-top: .6rem;
+
+    border-top: 1px solid rgba(58,46,40,.4);
+
+    font-size: .85rem;
+
+    letter-spacing: .14em;
+
+    text-transform: uppercase;
+}
+
+.work-fig--materials {
+
+    grid-column: 1 / span 8;
+
+    grid-row: 1;
+}
+
+.work-fig--materials img {
+
+    aspect-ratio: 3 / 2;
+}
+
+.work-fig--model {
+
+    grid-column: 9 / span 4;
+
+    grid-row: 1 / span 2;
+
+    margin-top: 6rem;
+}
+
+.work-fig--model img {
+
+    aspect-ratio: 2 / 3;
+}
+
+.work-note {
+
+    grid-column: 1 / span 4;
+
+    grid-row: 2;
+
+    align-self: end;
+}
+
+.work-note h3 {
+
+    font-size: 2.8rem;
+
+    line-height: 1.1;
+
+    margin-bottom: 1rem;
+
+    font-family: var(--font-display);
+}
+
+.work-note p {
+
+    font-size: 1.35rem;
+
+    line-height: 2;
+}
+
+.work-fig--drawings {
+
+    grid-column: 5 / span 4;
+
+    grid-row: 2;
+}
+
+.work-fig--drawings img {
+
+    aspect-ratio: 2 / 3;
+}
+
+/* ========================================
+   PROCESS TIMELINE
+======================================== */
+
+.timeline-section {
+
+    background:
+    linear-gradient(
+        180deg,
+        var(--blend-2b) 0%,
+        var(--blend-3) 100%
+    );
+}
+
+.timeline-section h2 {
+
+    font-size: clamp(3rem, 5vw, 5rem);
+
+    line-height: 1.05;
+}
+
+.timeline {
+
+    position: relative;
+
+    max-width: 950px;
+
+    margin: 4rem 0 0;
+
+    padding: 0;
+
+    list-style: none;
+}
+
+.timeline::before {
+
+    content: "";
+
+    position: absolute;
+
+    top: .5rem;
+
+    bottom: .5rem;
+
+    left: calc(7rem + 1.25rem);
+
+    width: 1px;
+
+    background: var(--antique-wood);
+
+    opacity: .5;
+}
+
+.timeline li {
+
+    position: relative;
+
+    display: grid;
+
+    grid-template-columns: 7rem 1fr;
+
+    gap: 0 2.5rem;
+
+    align-items: baseline;
+
+    padding: 1.5rem 0;
+}
+
+.timeline li::after {
+
+    content: "";
+
+    position: absolute;
+
+    top: 2.4rem;
+
+    left: calc(7rem + 1.25rem - 5px);
+
+    width: 11px;
+
+    height: 11px;
+
+    border-radius: 50%;
+
+    background: var(--antique-wood);
+}
+
+.timeline__year {
+
+    font-family: var(--font-display);
+
+    font-size: 3rem;
+
+    line-height: 1;
+
+    color: var(--antique-wood);
+}
+
+.timeline li p {
+
+    max-width: 650px;
+
+    font-size: 1.35rem;
+
+    line-height: 2;
+}
+
+/* ========================================
+   THE STUDIO
+======================================== */
+
+.team-section {
+
+    background:
+    linear-gradient(
+        180deg,
+        #dcc5a7 0%,
+        #d2b998 100%
+    );
+}
+
+.team-section h2 {
+
+    font-size: clamp(3rem, 5vw, 5rem);
+
+    line-height: 1.05;
+}
+
+.team-intro {
+
+    max-width: 850px;
+
+    margin: 3rem auto 0;
+
+    text-align: center;
+
+    font-size: 1.35rem;
+
+    line-height: 2;
+}
+
+/* ========================================
+   CTA
+======================================== */
+
+.atelier-cta {
+
+    background: var(--blend-4);
+
+    text-align: center;
+}
+
+.atelier-cta h2 {
+
+    font-size: clamp(3rem, 5vw, 5rem);
+
+    line-height: 1.05;
+}
+
+.atelier-cta p {
+
+    max-width: 650px;
+
+    margin: 0 auto 2rem;
+
+    font-size: 1.35rem;
+
+    line-height: 2;
+}
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 991.98px) {
+
+    .page-hero {
+
+        padding: 9rem 0 5rem;
+    }
+
+    .page-hero__grid,
+    .philosophy__grid {
+
+        grid-template-columns: 1fr;
+
+        gap: 3rem;
+    }
+
+    .page-hero__media {
+
+        max-width: 340px;
+
+        margin: 0;
+    }
+
+    .work-grid {
+
+        grid-template-columns: repeat(6, 1fr);
+
+        column-gap: 1.5rem;
+    }
+
+    .work-fig--materials {
+        grid-column: 1 / -1;
+    }
+
+    .work-fig--model {
+        grid-column: 1 / span 3;
+        grid-row: auto;
+        margin-top: 0;
+        order: 2;
+    }
+
+    .work-fig--drawings {
+        grid-column: 4 / span 3;
+        grid-row: auto;
+        order: 3;
+    }
+
+    .work-note {
+        grid-column: 1 / -1;
+        grid-row: auto;
+        order: 4;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .page-hero h1 {
+
+        font-size: clamp(3.5rem, 12vw, 5rem);
+    }
+
+    .page-hero p,
+    .philosophy p,
+    .timeline li p,
+    .work-note p,
+    .team-intro,
+    .atelier-cta p {
+
+        font-size: 1.15rem;
+
+        line-height: 1.9;
+    }
+
+    .work-note h3 {
+
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .timeline::before,
+    .timeline li::after {
+
+        display: none;
+    }
+
+    .timeline li {
+
+        grid-template-columns: 1fr;
+    }
+
+    .work-fig--model,
+    .work-fig--drawings {
+
+        grid-column: 1 / -1;
+    }
+}
+.page-hero { padding: 9rem 0 4.5rem; }
+.philosophy, 
+.work-section, 
+.timeline-section, 
+.team-section,
+ .atelier-cta {
+     padding: 5.5rem 0; }
+.work-grid { margin-top: 3rem; row-gap: 2rem; }
+.work-fig--model { margin-top: 3.5rem; }

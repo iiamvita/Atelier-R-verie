@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="utf-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Architecture | Atelier Rêverie</title>
+
+  <meta name="description" content="From the first conversation to the finished home: follow the journey of a house, from plans to the day you move in.">
+
+  <script>document.documentElement.classList.add("js")</script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="base.css">
+
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="stylesheet" href="shared.css">
+
+  <link rel="stylesheet" href="architecture.css">
+
+  <link rel="stylesheet" href="house.css">
+
+  <link rel="stylesheet" href="animations.css">
+
+  <link rel="stylesheet" href="motion.css">
+
+</head>
+<body>
+
+  <!-- ===== HEADER / NAVIGATION ===== -->
+  <header class="site-header">
+
+    <nav class="navbar navbar-expand-lg" aria-label="Main navigation">
+      <div class="container-xl">
+        <a class="navbar-brand" href="index.html">Atelier Rêverie</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="mainNav">
+          <ul class="navbar-nav">
+
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+
+            <li class="nav-item"><a class="nav-link" href="studio.html">The Atelier</a></li>
+
+            <li class="nav-item"><a class="nav-link" href="architecture.html" aria-current="page">Architecture</a></li>
+
+            <li class="nav-item"><a class="nav-link" href="interior.html">Interior</a></li>
+
+            <li class="nav-item"><a class="nav-link" href="collection.html">Collection</a></li>
+
+            <li class="nav-item"><a class="nav-link" href="contact.html">Visit Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ===== STAGE MARKER (shows once you scroll past the hero) ===== -->
+  <nav class="journey" aria-label="Project stages">
+    <ol>
+      <li><a href="#beginning"><span>Begin</span></a></li>
+
+      <li><a href="#plan"><span>Plan</span></a></li>
+
+      <li><a href="#build"><span>Build</span></a></li>
+
+      <li><a href="#home"><span>Home</span></a></li>
+
+    </ol>
+  </nav>
+
+  <main id="main">
+
+   <!-- ===== HERO ===== -->
+<section class="arch-hero" aria-labelledby="page-title">
+
+  <img src="images/blueprint-.jpg"
+
+       width="1174" height="900" fetchpriority="high"
+
+       alt="Architect sketching a floor plan at a desk">
+
+  <div class="arch-hero__content">
+
+    <span class="section-label">Architecture</span>
+
+    <h1 id="page-title">Where every home begins.</h1>
+
+    <a href="#beginning" class="btn-maison">Follow the journey</a>
+
+  </div>
+</section>
+
+    <!-- ===== STAGE 1: THE BEGINNING ===== -->
+    <section class="stage stage--begin section" id="beginning" aria-labelledby="begin-title">
+
+      <div class="container-xl">
+
+        <span class="section-label">The beginning</span>
+
+        <h2 id="begin-title">It starts with a conversation.</h2>
+
+        <div class="pair">
+
+          <figure class="plate curtain pair__wide" data-reveal>
+
+            <img src="images/conversation.jpg"
+            
+            width="1600" height="1066" loading="lazy"
+
+            alt="Three people gathered around a large floor plan, one pointing at it with a pencil">
+
+            <figcaption><span>Listening</span></figcaption>
+
+          </figure>
+
+
+          <figure class="plate curtain pair__narrow" data-reveal>
+
+            <img src="images/architecture-plans.jpg" 
+            
+            width="1400" height="933" loading="lazy"
+
+            alt="Architect lifting a sheet of tracing paper over detailed floor plans, a pencil in his hand">
+
+            <figcaption><span>First sketches</span></figcaption>
+
+          </figure>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== STAGE 2: THE PLAN ===== -->
+    <section class="stage stage--plan section" id="plan" aria-labelledby="plan-title">
+
+      <div class="container-xl">
+
+        <span class="section-label">The plan</span>
+
+        <h2 id="plan-title">Then we draw it together.</h2>
+
+        <figure class="plate curtain plan__hero" data-reveal>
+
+          <img src="images/architecture-plans.jpg" 
+          
+          width="1800" height="1202" loading="lazy"
+
+               alt="Floor plans, a house-shaped key ring, a spirit level and a white hard hat on a concrete floor">
+
+          <figcaption><span>Floor plans</span></figcaption>
+
+        </figure>
+
+        <div class="plan__rooms">
+
+          <figure class="plate curtain" data-reveal>
+
+            <img src="images/living-room.jpg" 
+
+            width="800" height="600" loading="lazy" 
+            
+            alt="Drawn plan of a living room with sofa, rug, armchairs and fireplace">
+
+
+            <figcaption><span>Living room</span></figcaption>
+
+          </figure>
+
+          <figure class="plate curtain" data-reveal>
+
+            <img src="images/bedroom.jpg"
+            
+            width="800" height="600" loading="lazy" 
+            
+            alt="Drawn plan of a bedroom with bed, bedside tables and wardrobe">
+
+
+            <figcaption><span>Bedroom</span></figcaption>
+
+          </figure>
+
+
+          <figure class="plate curtain" data-reveal>
+
+            <img src="images/arch-window.jpg" 
+
+            width="800" height="600" loading="lazy"
+            
+            alt="Arch window shwoing the exterior.">
+
+            <figcaption><span>Exterior</span></figcaption>
+
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== STAGE 3: THE BUILD ===== -->
+    <section class="stage stage--build section" id="build" aria-labelledby="build-title">
+
+      <div class="container-xl">
+
+        <span class="section-label">The build</span>
+
+        <h2 id="build-title">Then we build it with care.</h2>
+
+        <figure class="plate curtain build__wide" data-reveal>
+
+          <img src="images/unfinished-basement.jpg"
+          
+          width="1800" height="1200" loading="lazy"
+      
+               alt="Unfinished basement with exposed timber joists, block walls and a framed doorway">
+
+          <figcaption><span>Framing</span></figcaption>
+
+        </figure>
+
+        <div class="house-scroll" data-house>
+
+          <div class="house-sticky">
+
+            <div class="house__panel">
+
+              <svg viewBox="0 0 800 520" role="img" 
+              
+              aria-label="Line drawing of a house being built, from foundations to the finished home">
+
+                <path class="fill" d="M190 425V255H610V425Z" fill="#EADFCC" data-type="fade" data-start="0.86" data-end="0.96"/>
+                <path class="fill" d="M150 255L400 100L650 255Z" fill="#A77B57" data-type="fade" data-start="0.84" data-end="0.94"/>
+                <path class="fill" d="M370 425V335H430V425Z" fill="#6A4A31" data-type="fade" data-start="0.84" data-end="0.92"/>
+                <path class="fill" d="M230 300H320V370H230Z M480 300H570V370H480Z" fill="#E2C89D" data-type="fade" data-start="0.9" data-end="1"/>
+                <path class="fill" d="M700 395m-42 0a42 42 0 1 0 84 0a42 42 0 1 0 -84 0Z" fill="#A5AA8A" data-type="fade" data-start="0.92" data-end="1"/>
+                <path d="M40 450H760" data-type="draw" data-start="0" data-end="0.12"/>
+                <path d="M170 450V425H630V450" data-type="draw" data-start="0.08" data-end="0.24"/>
+                <path d="M190 425V255H610V425" data-type="draw" data-start="0.24" data-end="0.4"/>
+                <path d="M270 425V255M350 425V255M450 425V255M530 425V255" data-type="draw" data-start="0.32" data-end="0.46"/>
+                <path d="M150 255L400 100L650 255Z" data-type="draw" data-start="0.5" data-end="0.68"/>
+                <path d="M530 160V92H575V190" data-type="draw" data-start="0.62" data-end="0.72"/>
+                <path d="M370 425V335H430V425Z" data-type="draw" data-start="0.76" data-end="0.84"/>
+                <path d="M230 300H320V370H230Z M275 300V370 M230 335H320 M480 300H570V370H480Z M525 300V370 M480 335H570" data-type="draw" data-start="0.8" data-end="0.9"/>
+                <path d="M350 450V438H450V450" data-type="draw" data-start="0.84" data-end="0.9"/>
+                <path d="M700 450V395 M700 395m-42 0a42 42 0 1 0 84 0a42 42 0 1 0 -84 0" data-type="draw" data-start="0.88" data-end="0.98"/>
+              </svg>
+            </div>
+            <ol class="house__steps" aria-label="Construction stages">
+
+              <li>Foundations</li>
+
+              <li>Frame</li>
+
+              <li>Roof</li>
+
+              <li>Finishes</li>
+
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== STAGE 4: THE HOME ===== -->
+    <section class="stage stage--home section" id="home" aria-labelledby="home-title">
+
+      <div class="container-xl">
+
+        <span class="section-label">The home</span>
+
+        <h2 id="home-title">And it becomes yours.</h2>
+
+        <div class="pair pair--home">
+
+          <figure class="plate pair__wide" data-reveal>
+
+            <div class="compare" data-compare>
+
+              <img class="compare__img" src="images/empty-room.jpg"
+
+               width="1400" height="933" loading="lazy"
+
+                   alt="Bright empty room with white walls, a wood-tone floor and two windows onto a tree">
+
+              <img class="compare__img compare__after" src="images/living-room-interior.jpg"
+
+               width="1400" height="933" loading="lazy"
+
+                   alt="Living room with a grey corner sofa, an arched brass lamp, sheer curtains and a framed watercolour">
+
+              <span class="compare__handle" aria-hidden="true"></span>
+
+              <span class="compare__tag compare__tag--before" aria-hidden="true">Empty</span>
+
+              <span class="compare__tag compare__tag--after" aria-hidden="true">Home</span>
+
+              <input class="compare__range" type="range" min="0" max="100" value="50"
+
+                     aria-label="Slide to compare an empty room with a furnished one">
+
+            </div>
+
+            <figcaption><span>Slide to bring it to life</span></figcaption>
+
+          </figure>
+
+          <figure class="plate curtain pair__narrow" data-reveal>
+
+            <img src="images/arch-window.jpg"
+
+             width="1200" height="1690" loading="lazy"
+
+                 alt="A beautiful done arch windows, showing the backyard. Floor-length windows, showing the exterior.">
+
+            <figcaption><span>Arch Window</span></figcaption>
+
+          </figure>
+
+        </div>
+
+        <div class="home__gallery">
+
+          <figure class="plate curtain" data-reveal>
+
+            <img class="pos-left" src="images/bedroom-interior.jpg"
+            
+            width="1200" height="900" loading="lazy"
+
+                 alt="Bed seen from above with a padded headboard, linen cushions and a glowing pendant light">
+
+            <figcaption><span>Bedroom</span></figcaption>
+
+            <figure class="plate curtain" data-reveal>
+
+              <img class="pos-left" src="images/interior-light.jpg"
+
+              width="110" height="700" loading="lazy"
+
+              alt="Oak wlkway, with natural light streaming from the glass roof.">
+
+              <figcaption><span>Hallway</span></figcaption>
+
+            </figure>
+
+          </figure>
+          <figure class="plate curtain" data-reveal>
+
+            <img class="pos-left" src="images/kitchen.jpg"
+            
+            width="1200" height="800" loading="lazy"
+
+                 alt="White kitchen with a marble island, navy hexagon tiles and two pendant lights">
+
+            <figcaption><span>Kitchen</span></figcaption>
+
+          </figure>
+
+          <figure class="plate curtain" data-reveal>
+
+            <img class="pos-right" src="images/arch-hero.jpg"
+            
+            width="1200" height="800" loading="lazy"
+
+                 alt="Modern house entrance at dusk with a lit timber door, stone walls and a lawn lit by garden lights">
+
+            <figcaption><span>Evening</span></figcaption>
+
+          </figure>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CALL TO ACTION ===== -->
+
+    <section class="arch-cta section" aria-labelledby="cta-title">
+
+      <div class="container-xl" data-reveal>
+
+        <h2 id="cta-title">Come home to something you helped design.</h2>
+
+        <a href="contact.html" class="btn-maison">Start your story</a>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+
+    <div class="footer-panel">
+
+      <div class="footer-brand-block">
+
+        <img src="images/parisian-door.jpg" 
+        
+        alt="Carved wooden door of a stone Parisian townhouse" 
+        
+        class="footer-image" width="84" height="112" loading="lazy">
+        <div>
+
+          <p class="footer__brand">Atelier Rêverie</p>
+          <p class="footer__tagline">Architecture. Interiors. Thoughtful Design.</p>
+          <p class="footer__description">Creating homes and spaces designed to be lived in beautifully.</p>
+
+        </div>
+      </div>
+
+      <nav aria-label="Footer navigation">
+
+        <h2 class="footer-heading">Explore</h2>
+
+        <ul class="footer-links">
+
+          <li><a href="index.html">Home</a></li>
+
+          <li><a href="studio.html">The Atelier</a></li>
+
+          <li><a href="architecture.html">Architecture</a></li>
+
+          <li><a href="interior.html">Interior</a></li>
+
+          <li><a href="collection.html">Collection</a></li>
+
+        </ul>
+      </nav>
+
+    <div>
+      <h2 class="footer-heading">Connect</h2>
+
+      <ul class="footer-links footer-links--stack">
+
+        <li><a href="mailto:architecturedesign@atelierreverie.com">architecturedesign@atelierreverie.com</a></li>
+
+        <li>Paris, France.</li>
+
+        <li><a href="#">Instagram</a></li>
+
+        <li><a href="#">Facebook</a></li>
+
+      </ul>
+
+    </div>
+
+      <p class="footer-bottom">&copy; 2026 Atelier Rêverie. All Rights Reserved.</p>
+      
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
+ <script src="js/reveal.js" defer onerror="document.documentElement.classList.remove('js')"></script>
+  <script src="journey.js" defer></script>
+  <script src="compare.js" defer></script>
+  <script src="house.js" defer></script>
+</body>
+</html>
