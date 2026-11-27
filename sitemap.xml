@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <url>
+    <loc>https://atelier-reverie-project.vercel.app</loc>
+  </url>
+
+  <url>
+    <loc>https://atelier-reverie-project.vercel.app/index.htmll</loc>
+  </url>
+
+  <url>
+    <loc>https://atelier-reverie-project.vercel.app/studio.html</loc>
+  </url>
+
+  <url>
+    <loc>https://atelier-reverie-project.vercel.app/architecture.html</loc>
+  </url>
+
+  <url>
+    <loc>https://atelier-reverie-project.vercel.app/interior.html</loc>
+  </url>
+
+  <url>
+    <loc>https://atelier-reverie-project.vercel.app/collection.html</loc>
+  </url>
+
+  <url>
+    <loc>https://atelier-reverie-project.vercel.app/contact.html</loc>
+  </url>
+
+</urlset>
