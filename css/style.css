@@ -331,3 +331,10 @@ p {
         grid-template-columns: 1fr 1fr;
     }
 }
+
+/* Desktop hero spacing correction */
+@media (min-width: 992px) {
+    .hero {
+        padding-top: 10rem;
+    }
+}
